@@ -1,0 +1,18 @@
+tls:
+  certificates:
+    - certFile: /certs/aria-portal.local.crt
+      keyFile: /certs/aria-portal.local.key
+    - certFile: /certs/prometheus.aria-portal.local.crt
+      keyFile: /certs/prometheus.aria-portal.local.key
+    - certFile: /certs/cadvisor.aria-portal.local.crt
+      keyFile: /certs/cadvisor.aria-portal.local.key
+    - certFile: /certs/grafana.aria-portal.local.crt
+      keyFile: /certs/grafana.aria-portal.local.key
+    - certFile: /certs/traefik.aria-portal.local.crt
+      keyFile: /certs/traefik.aria-portal.local.key
+    - certFile: /certs/phpmyadmin.aria-portal.local.crt
+      keyFile: /certs/phpmyadmin.aria-portal.local.key
+    - certFile: /certs/mailhog.aria-portal.local.crt
+      keyFile: /certs/mailhog.aria-portal.local.key
+    - certFile: /certs/jenkins.aria-portal.local.crt
+      keyFile: /certs/jenkins.aria-portal.local.key

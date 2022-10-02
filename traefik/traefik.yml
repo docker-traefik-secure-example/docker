@@ -1,0 +1,33 @@
+api:
+  dashboard: true
+
+accessLog: {}
+log:
+  level: INFO
+
+metrics:
+  prometheus:
+    addEntryPointsLabels: true
+    addRoutersLabels: true
+    addServicesLabels: true
+    entryPoint: https
+
+providers:
+  docker:
+    endpoint: "unix:///var/run/docker.sock"
+    exposedByDefault: false
+    defaultRule: "Host(`traefik.aria-portal.local`)"
+  file:
+    directory: '/etc/traefik/dynamic_conf'
+    filename: 'conf.yml'
+
+entryPoints:
+  http:
+    address: ':80'
+    http:
+      redirections:
+        entryPoint:
+          to: https
+          scheme: https
+  https:
+    address: ':443'
