@@ -15,8 +15,8 @@ Pfad auf Linux: `/etc/hosts`, Pfad auf Windows: `%windir%\system32\drivers\etc`
 
 Folgenden Eintrag einfügen:
 ````
-192.168.0.28 www.aria-portal.local
-192.168.0.28 aria-portal.local
+192.168.xxx.xxx www.aria-portal.local
+192.168.xxx.xxx aria-portal.local
 ````
 4. SSL für Verschlüsselung verwenden
 ````
